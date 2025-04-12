@@ -25,7 +25,23 @@ body {
       border-bottom: 0.4em solid var(--color-accent);
       background-color: #007bff;
     }
-    
+    input, textarea, button {
+      font: inherit;
+    }
+    form {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1em;
+    }
+    label {
+      grid-column: 1;
+    }
+    input, textarea {
+      grid-column: 2;
+    }
+    button {
+      grid-column: 1 / -1;
+    }
     
     
     

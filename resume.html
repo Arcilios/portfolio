@@ -1,63 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Resume - Jane Doe</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact/index.html">Contact</a></li>
-            <li><a href="projects/index.html">Project</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul> 
-    </nav>
-
-  <header>
-    <h1>Jane Doe</h1>
-    <p>Fake Data, Aspiring Web Developer</p>
-  </header>
-
+<main class="cv">
+  <h1>Ruocheng Li</h1>
+  <p><strong>Email:</strong> rul039@ucsd.edu</p>
+  <p><strong>Phone:</strong> +1 858-241-5728</p>
+  <p>Detail-oriented Mechanical Engineering student at UCSD focused on control and robotics. Experienced in automation systems, DIY electronics, and hardware integration.</p>
+  <link rel="stylesheet" href="cvstyle.css"> 
   <section>
     <h2>Education</h2>
-    <article>
-      <header>
-        <h3>Fake University</h3>
-        <p>B.S. in Computer Science</p>
-      </header>
-      <time datetime="2020-09">Sep 2020</time> – <time datetime="2024-06">Jun 2024</time>
-    </article>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <article>
-      <header>
-        <h3>Frontend Intern at Imaginary Tech Co.</h3>
-      </header>
-      <time datetime="2023-06">Jun 2023</time> – <time datetime="2023-08">Aug 2023</time>
-      <ul>
-        <li>Built fake user dashboards using HTML, CSS, JavaScript</li>
-        <li>Worked with a team of unicorns on an imaginary project</li>
-      </ul>
-    </article>
+    <p><strong>B.S. Mechanical Engineering (Control & Robotics)</strong>, UC San Diego</p>
+    <ul>
+      <li>Minor: Data Science</li>
+      <li>GPA: 3.75 | Dean’s Honors</li>
+      <li>Courses: Controls, Thermo/Fluids, CAD, FEA, Monte Carlo Analysis, Data Structures</li>
+    </ul>
   </section>
 
   <section>
     <h2>Skills</h2>
     <ul>
-      <li>HTML5, CSS3, JavaScript</li>
-      <li>Git & GitHub</li>
-      <li>Fake Problem Solving</li>
+      <li><strong>Programming:</strong> Python, Matlab, Java, C++, Arduino</li>
+      <li><strong>Frameworks:</strong> ROS2, OpenCV, PyTorch</li>
+      <li><strong>CAD:</strong> SolidWorks, Fusion 360, AutoCAD</li>
+      <li><strong>Manufacturing:</strong> 3D Printing, CNC</li>
+      <li><strong>Data:</strong> Visualization, Monte Carlo, FEA</li>
     </ul>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jane.doe@example.com">jane.doe@example.com</a></p>
-    <p>Website: <a href="https://example.com">https://example.com</a></p>
+    <h2>Projects</h2>
+    <article>
+      <h3>Autogyro Flight Controller (Jan 2025 – ongoing)</h3>
+      <ul>
+        <li>Designed full aircraft structure for sensor + control modules</li>
+        <li>Integrated ROS2 for sensor fusion and real-time path control</li>
+        <li>Used DJI FPV system and custom gimbal for stabilized live video</li>
+      </ul>
+    </article>
+    <article>
+      <h3>U.S. Power Outage Data Analysis (Feb–Mar 2025)</h3>
+      <ul>
+        <li>Cleaned and engineered features for outage duration regression</li>
+        <li>Visualized trends and linked results to infrastructure + climate</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Autonomous Vehicle with Lane-Keeping & Obstacle Avoidance (Fall 2024)</h3>
+      <ul>
+        <li>Used PyTorch for vehicle detection and ROS2 for system control</li>
+        <li>Combined OpenCV/OAK-D for deviation correction and LIDAR for braking</li>
+      </ul>
+    </article>
+    <article>
+      <h3>GPS-Based Lane-Keeping Vehicle (Sep–Oct 2024)</h3>
+      <ul>
+        <li>Integrated GPS + ML model for real-time lane detection via ROS2</li>
+        <li>Optimized antenna mount with custom CAD design</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Arduino System Monitor (Jul–Aug 2024)</h3>
+      <ul>
+        <li>Displayed temperature, CPU, GPU data on OLED via Python serial</li>
+        <li>Integrated DS18B20 and implemented error handling</li>
+      </ul>
+    </article>
+    <article>
+      <h3>Image Processing + KNN Classifier (Feb–Mar 2024)</h3>
+      <ul>
+        <li>Implemented image negation, grayscale, edge detection, etc.</li>
+        <li>Classified images using custom KNN on pixel distance</li>
+      </ul>
+    </article>
   </section>
-</body>
-</html>
+</main>

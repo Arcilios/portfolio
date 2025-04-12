@@ -26,6 +26,24 @@ body {
       background-color: #007bff;
     }
     
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+      gap: 1em;
+    }
+    article {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 3;
+    }
+    h1 {
+      font-size: 400%;
+    }
+    
+    h1, h2, h3 {
+      line-height: 1.1;
+      text-wrap: balance;
+    }
     
     
     
