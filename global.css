@@ -1,0 +1,151 @@
+:root {
+    --color-accent: #6C63FF;
+    --color-hover-bg: #E0E7FF;
+    --color-active: #1E90FF;
+    --color-dark-bg: #121212;
+    --color-dark-text: #eee;
+    --color-dark-accent: #BB86FC;
+    --color-dark-hover: #333;
+  }
+  
+  body {
+    max-width: 100ch;
+    font: 100%/1.5 system-ui;
+    padding: 0 1em;
+    margin-inline: auto;
+    background: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav ul, nav li {
+    display: contents;
+  }
+  
+  nav {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+  }
+  
+  nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5em;
+    border-bottom: 0.4em solid transparent;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  }
+  
+  nav a:hover {
+    border-bottom-color: var(--color-accent);
+    background-color: var(--color-hover-bg);
+  }
+  
+  .current {
+    font-weight: bold;
+    color: var(--color-active);
+    border-bottom-color: var(--color-active);
+  }
+  
+  body.dark {
+    background: var(--color-dark-bg);
+    color: var(--color-dark-text);
+  }
+  
+  body.dark nav {
+    border-color: #444;
+  }
+  
+  body.dark nav a {
+    border-bottom-color: transparent;
+  }
+  
+  body.dark nav a:hover {
+    background-color: var(--color-dark-hover);
+    border-bottom-color: var(--color-dark-accent);
+  }
+  
+  body.dark .current {
+    color: var(--color-dark-accent);
+    border-bottom-color: var(--color-dark-accent);
+  }
+  
+  .cv {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .cv h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .cv section {
+    margin-top: 1.5em;
+  }
+  
+  .cv ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+  }
+  
+  article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
+  
+  h1 {
+    font-size: 400%;
+  }
+  
+  h1, h2, h3 {
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+  
+  /* 📝 表单样式 */
+  input, textarea, button {
+    font: inherit;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+  }
+  
+  label {
+    grid-column: 1;
+  }
+  
+  input, textarea {
+    grid-column: 2;
+    padding: 0.4em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    grid-column: 1 / -1;
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: var(--color-active);
+  }
+  
