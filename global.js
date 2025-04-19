@@ -20,10 +20,10 @@ let currentLink = navLinks.find(
 currentLink?.classList.add("current");
 
 const navItems = [
-    { href: "../index.html", text: "Home" },
-    { href: "../contact/index.html", text: "Contact" },
-    { href: "../projects/index.html", text: "Project" },
-    { href: "../resume.html", text: "Resume" },
+    { href: "/portfolio/index.html", text: "Home" },
+    { href: "/portfolio/contact/index.html", text: "Contact" },
+    { href: "/portfolio/projects/index.html", text: "Project" },
+    { href: "/portfolio/resume.html", text: "Resume" },
     { href: "https://github.com/Arcilios/portfolio", text: "GitHub Repo", external: true },
   ];
   
