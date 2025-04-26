@@ -64,4 +64,41 @@ toggle.addEventListener("click", () => {
 
 document.body.appendChild(toggle);
 
+export async function fetchJSON(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
+    return await res.json();
+  } catch (err) {
+    console.error('Failed to load JSON:', err);
+    return [];
+  }
+}
+
+export function renderProjects(projects, container, headingTag = 'h2') {
+  container.innerHTML = '';
+
+  if (projects.length === 0) {
+    container.innerHTML = '<p>No projects to display.</p>';
+    return;
+  }
+
+  for (const project of projects) {
+    const article = document.createElement('article');
+    article.innerHTML = `
+      <${headingTag}>${project.title}</${headingTag}>
+      <img src="${project.image}" alt="${project.title}" />
+      <p>${project.description}</p>
+    `;
+    container.appendChild(article);
+  }
+
+  const countEl = document.getElementById('count');
+  if (countEl) {
+    countEl.textContent = `Total projects: ${projects.length}`;
+  }
+}
+
+
+
   
