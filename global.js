@@ -86,7 +86,6 @@ export function renderProjects(projects, container, headingTag = 'h2') {
   for (const project of projects) {
     const article = document.createElement('article');
     
-    // If project has a link, wrap content in an <a> tag
     if (project.link) {
       article.innerHTML = `
         <a href="${project.link}" target="_blank" style="text-decoration: none; color: inherit;">
