@@ -22,7 +22,7 @@
       "year": "2024",
       "image": "images/foodapp.png",
       "description": "Built SpringBoot backend with Redis, JWT, and RabbitMQ to support async high-concurrency order flow.",
-      "link":"https://github.com/Arcilios/portfolio/blob/main/projects/project%202/project2_report.html"
+      "link":"/portfolio/projects/project%202/project2_report.html"
     },
     {
       "title": "Restaurant Review App",
