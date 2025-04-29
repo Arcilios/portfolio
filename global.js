@@ -89,6 +89,7 @@ export function renderProjects(projects, container, headingTag = 'h2') {
       <${headingTag}>${project.title}</${headingTag}>
       <img src="${project.image}" alt="${project.title}" />
       <p>${project.description}</p>
+      <a href="https://your-link-here.com" target="_blank" style="text-decoration: none; color: inherit;">
     `;
     container.appendChild(article);
   }
