@@ -85,14 +85,27 @@ export function renderProjects(projects, container, headingTag = 'h2') {
 
   for (const project of projects) {
     const article = document.createElement('article');
-    article.innerHTML = `
-      <${headingTag}>${project.title}</${headingTag}>
-      <img src="${project.image}" alt="${project.title}" />
-      <p>${project.description}</p>
-      <a href="https://your-link-here.com" target="_blank" style="text-decoration: none; color: inherit;">
-    `;
+    
+    // If project has a link, wrap content in an <a> tag
+    if (project.link) {
+      article.innerHTML = `
+        <a href="${project.link}" target="_blank" style="text-decoration: none; color: inherit;">
+          <h3>${project.title} <span>(${project.year})</span></h3>
+          <img src="${project.image}" alt="${project.title}" />
+          <p>${project.description}</p>
+        </a>
+      `;
+    } else {
+      article.innerHTML = `
+        <h3>${project.title} <span>(${project.year})</span></h3>
+        <img src="${project.image}" alt="${project.title}" />
+        <p>${project.description}</p>
+      `;
+    }
+  
     container.appendChild(article);
   }
+  
 
   const countEl = document.getElementById('count');
   if (countEl) {
