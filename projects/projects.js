@@ -1,4 +1,4 @@
-import { fetchJSON, renderProjects } from '../global.js';
+import { fetchJSON, renderProjects } from './global.js';
 
 async function init() {
   const tooltip = d3.select("body")
@@ -14,7 +14,7 @@ async function init() {
     .style("opacity", 0);
 
   const projectsContainer = document.querySelector('.projects');
-  const projects = await fetchJSON('../lib/projects.json');
+  const projects = await fetchJSON('./lib/projects.json');
   renderProjects(projects, projectsContainer, 'h2');
 
   const allYears = Array.from(new Set(projects.map(p => p.year))).sort();
