@@ -106,10 +106,6 @@ export function renderProjects(projects, container, headingTag = 'h2') {
   }
   
 
-  const countEl = document.getElementById('count');
-  if (countEl) {
-    countEl.textContent = `Total projects: ${projects.length}`;
-  }
 }
 
 

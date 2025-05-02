@@ -7,9 +7,26 @@
   <link rel="stylesheet" href="../global.css" />
 </head>
 <body>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
   <h1>Project Information</h1>
+
+  <div class="search-container">
+    <input
+      id="searchBox"
+      type="search"
+      class="searchBar"
+      aria-label="Search projects"
+      placeholder="Search projects…"
+    />
+  </div>
+  
+  <div class="pie-legend-container">
+    <svg id="chart" width="400" height="400" viewBox="0 0 400 400"></svg>
+    <ul class="legend"></ul>
+  </div>
   <section class="projects"></section>
-  <p id="count"></p>
+  <p id="total-count">Total projects: 0</p>
+
   <script type="module" src="./projects.js"></script>
 </body>
 </html>

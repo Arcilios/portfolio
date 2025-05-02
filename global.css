@@ -112,7 +112,6 @@
     text-wrap: balance;
   }
   
-  /* 📝 表单样式 */
   input, textarea, button {
     font: inherit;
   }
@@ -148,4 +147,76 @@
   button:hover {
     background-color: var(--color-active);
   }
+  .tooltip {
+    font-family: sans-serif;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+  }
+  .pie-legend-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
   
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .legend li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .legend .swatch {
+    width: 1em;
+    height: 1em;
+    background: var(--color);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .legend li.selected {
+    --color: oklch(60% 45% 0) !important;
+  }
+  
+  .search-wrapper {
+    margin: 1.5rem 2rem 0 2rem;
+  }
+  
+  .searchBar {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.3;
+}
+
+path {
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+path.selected {
+  fill: oklch(60% 45% 0) !important;
+}
+
+.legend li.selected {
+  --color: oklch(60% 45% 0) !important;
+}
