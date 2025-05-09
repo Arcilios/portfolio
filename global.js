@@ -24,8 +24,10 @@ const navItems = [
     { href: "/portfolio/contact/index.html", text: "Contact" },
     { href: "/portfolio/projects/index.html", text: "Project" },
     { href: "/portfolio/resume.html", text: "Resume" },
+    { href: "/portfolio/meta/index.html", text: "Meta" },
     { href: "https://github.com/Arcilios/portfolio", text: "GitHub Repo", external: true },
-  ];
+];
+
   
   const nav = document.createElement("nav");
   
