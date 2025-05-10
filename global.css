@@ -220,3 +220,62 @@ path.selected {
 .legend li.selected {
   --color: oklch(60% 45% 0) !important;
 }
+
+      .stats {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 0.5em 1em;
+    margin: 1em 0;
+}
+.gridlines line {
+    stroke: #ccc;
+    stroke-opacity: 0.5;
+}
+#chart svg {
+    max-width: 700px;
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.stats dt {
+    font-weight: bold;
+    color: #333;
+}
+
+.stats dd {
+    margin: 0;
+}
+.tooltip {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transition: opacity 0.2s;
+    font-size: 0.9em;
+}
+
+.tooltip[hidden] {
+    opacity: 0;
+    visibility: hidden;
+}
+
+circle {
+    transition: 200ms;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+circle:hover {
+    transform: scale(1.5);
+}
+circle.selected {
+    fill: #ff6b6b;
+}
+
+

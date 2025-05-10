@@ -1,6 +1,5 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
-
-// 全局变量提升
+import  '../global.js';
 let xScale, yScale, svg, usableArea, commits;
 
 async function loadData() {
