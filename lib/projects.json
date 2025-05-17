@@ -25,10 +25,11 @@
       "link":"/portfolio/projects/project%202/project2_report.html"
     },
     {
-      "title": "Restaurant Review App",
-      "year": "2024",
+      "title": "Boston Bike Route",
+      "year": "2025",
       "image": "images/reviewapp.png",
-      "description": "Implemented POI reviews, Redis caching, and user login via SMS in a location-based review system."
+      "description": "Map Visualization of Boston bike routes using Python and Folium, with data from the City of Boston.",
+      "link":"https://arcilios.github.io/Take-a-Bike/"
     },
     {
       "title": "Power Outage Duration Prediction",
