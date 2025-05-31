@@ -145,9 +145,20 @@ function onTimeSliderChange() {
   updateCommitInfo(filteredCommits.flatMap(d => d.lines), filteredCommits);
 }
 
+function injectScrollStoryContainer() {
+  if (!document.getElementById('scatter-story')) {
+    const container = document.getElementById('scrolly-container');
+    if (container) {
+      const div = document.createElement('div');
+      div.id = 'scatter-story';
+      container.appendChild(div);
+    }
+  }
+}
+
 function renderScrollama() {
-  d3.select('#scatter-story')
-    .selectAll('.step')
+  const el = d3.select('#scatter-story');
+  el.selectAll('.step')
     .data(commits)
     .join('div')
     .attr('class', 'step')
@@ -176,6 +187,7 @@ let data = await loadData();
 commits = processCommits(data);
 renderCommitInfoStatic();
 updateCommitInfo(data, commits);
+
 timeScale = d3.scaleTime()
   .domain(d3.extent(commits, d => d.datetime))
   .range([0, 100]);
@@ -184,6 +196,7 @@ filteredCommits = commits;
 
 renderFileVisualization();
 renderScatterPlot(filteredCommits);
+injectScrollStoryContainer();
 renderScrollama();
 
 document.getElementById('commit-progress').addEventListener('input', onTimeSliderChange);
