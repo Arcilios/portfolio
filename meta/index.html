@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-    <meta charset="UTF-8" />
-    <title>Meta Analysis</title>
-    <script type="module" src="main.js"></script>
-    <link rel="stylesheet" href="../global.css" />
+  <meta charset="UTF-8" />
+  <title>Meta Analysis</title>
+  <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="../global.css" />
 </head>
 <body>
-    <h1>Code Meta Analysis</h1>
-    <div id="stats"></div>
-    <h2>Commits by Time of Day</h2>
-    <div id="chart"></div>
-    <dl id="commit-tooltip" class="info tooltip" hidden>
-  <dt>Commit</dt>
-  <dd>
-    <a href="" id="commit-link" target="_blank"></a>
-  </dd>
-  <dt>Date</dt>
-  <dd id="commit-date"></dd>
-</dl>
-<p id="selection-count">No commits selected</p>
-<dl id="language-breakdown" class="stats"></dl>
+  <h1>Code Meta Analysis</h1>
 
+  <section id="controls">
+    <label for="commit-progress">Show commits until:</label>
+    <input type="range" id="commit-progress" min="0" max="100" value="100">
+    <time id="commit-time"></time>
+  </section>
+
+  <div id="stats"></div>
+
+  <dl id="files"></dl>
+
+  <div id="chart"></div>
+
+  <div id="scatter-story"></div>
 
 </body>
 </html>
