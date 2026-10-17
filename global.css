@@ -11,6 +11,7 @@
   --accent: #ff5c35;
   --accent-ink: #1e0a04;
   --signal: #b7f06a;
+  --contact-link: #b7f06a;
   --max: 1180px;
   --radius: 24px;
 }
@@ -26,6 +27,7 @@
   --accent: #ff7754;
   --accent-ink: #170603;
   --signal: #b7f06a;
+  --contact-link: #315d0b;
 }
 
 * { box-sizing: border-box; }
@@ -310,7 +312,7 @@ h1, h2, h3 { margin-top: 0; line-height: 1.05; letter-spacing: -.045em; text-wra
 .contact-band { margin-bottom: 50px; padding: clamp(50px, 9vw, 100px); border-radius: 32px; background: var(--ink); color: var(--bg); }
 .contact-band .eyebrow { color: color-mix(in srgb, var(--bg) 62%, transparent); }
 .contact-band h2 { max-width: 820px; margin-bottom: 48px; }
-.contact-band a { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-top: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); color: var(--signal); text-decoration: none; font-size: clamp(1rem, 2vw, 1.45rem); }
+.contact-band a { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; border-top: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); color: var(--contact-link); text-decoration: none; font-size: clamp(1rem, 2vw, 1.45rem); overflow-wrap: anywhere; }
 
 footer { display: flex; justify-content: space-between; gap: 24px; padding: 24px 0 42px; color: var(--muted); font-size: .75rem; }
 footer p { margin: 0; }
