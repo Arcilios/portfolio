@@ -1,77 +1,53 @@
 [
-    {
-      "title": "Autogyro UAV Surveillance",
-      "year": "2025",
-      "image": "images/uav.png",
-      "description": "A lightweight UAV with autorotating rotor, designed for long-range surveillance using Pixhawk and real-time computer vision."
-    },
-    {
-      "title": "Nutrition Data Analysis",
-      "year": "2025",
-      "image": "images/nutrition.png",
-      "description": "Compared national food intake to WHO standards using Python and visualization tools."
-    },
-    {
-      "title": "Realtime ESP8266 Sensor Logger",
-      "year": "2025",
-      "image": "images/esp8266.png",
-      "description": "Logged RPM and gyro data to SD card and served real-time HTTP data using ESP8266."
-    },
-    {
-      "title": "Deceptive Visualization",
-      "year": "2024",
-      "image": "images/foodapp.png",
-      "description": "Built SpringBoot backend with Redis, JWT, and RabbitMQ to support async high-concurrency order flow.",
-      "link":"/portfolio/projects/project%202/project2_report.html"
-    },
-    {
-      "title": "Boston Bike Route",
-      "year": "2025",
-      "image": "images/reviewapp.png",
-      "description": "Map Visualization of Boston bike routes using Python and Folium, with data from the City of Boston.",
-      "link":"https://arcilios.github.io/Take-a-Bike/"
-    },
-    {
-      "title": "Power Outage Duration Prediction",
-      "year": "2024",
-      "image": "images/outage.png",
-      "description": "Built regression models on outage data to estimate restoration time after weather events."
-    },
-    {
-      "title": "DJI O4 Integration Test",
-      "year": "2025",
-      "image": "images/dji_o4.png",
-      "description": "Tested DJI Air Unit O4 for video streaming and sensor synchronization in UAV systems."
-    },
-    {
-      "title": "Placeholder Project Alpha",
-      "year": "2021",
-      "image": "images/empty.svg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "title": "Placeholder Project Beta",
-      "year": "2022",
-      "image": "images/empty.svg",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      "title": "Placeholder Project Gamma",
-      "year": "2023",
-      "image": "images/empty.svg",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
-    },
-    {
-      "title": "Placeholder Project Delta",
-      "year": "2021",
-      "image": "images/empty.svg",
-      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
-    },
-    {
-      "title": "Placeholder Project Epsilon",
-      "year": "2022",
-      "image": "images/empty.svg",
-      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
-    }
-  ]
-  
+  {
+    "title": "Humanoid ROS 2 SDK",
+    "year": "2025 — Present",
+    "category": "Robotics Engineering",
+    "description": "A humanoid robotics architecture that routes sensor data, joint states, and motor CAN I/O through ROS 2, with MoveIt 2 models and feedback-control interfaces.",
+    "tags": ["ROS 2", "MoveIt 2", "CAN", "C++"],
+    "link": "https://github.com/triton-droids/embedded/tree/Humanoid_ros2"
+  },
+  {
+    "title": "Humanoid Vision & Head Tracking",
+    "year": "2026 — Present",
+    "category": "Perception & Control",
+    "description": "A C++ ROS 2 perception pipeline combining YOLO detection, optional TensorRT acceleration, aligned RealSense depth-to-3D estimation, and visual-servo head tracking through an ESP32 micro-ROS controller.",
+    "tags": ["YOLO", "RealSense", "TensorRT", "micro-ROS"],
+    "link": "https://github.com/triton-droids/embedded/tree/Humanoid_ros2/humanoid_vision"
+  },
+  {
+    "title": "ROS 2 Robotic Sorting System",
+    "year": "2026 — Present",
+    "category": "Manipulation",
+    "description": "A modular ROS 2 Humble and MoveIt 2 stack connecting object classification to bin-placement decisions, grasp planning, and manipulation execution.",
+    "tags": ["ROS 2 Humble", "MoveIt 2", "Docker", "OMPL"]
+  },
+  {
+    "title": "Autonomous Rotorcraft Flight Control",
+    "year": "2025",
+    "category": "Controls",
+    "description": "A multi-sensor Pixhawk flight-control pipeline for attitude control, state monitoring, trajectory tracking, onboard video, and target tracking.",
+    "tags": ["Pixhawk", "PID", "Path Planning", "Vision"]
+  },
+  {
+    "title": "Robot Motion Planning & Path Search",
+    "year": "2026 — Present",
+    "category": "Planning",
+    "description": "Implementations and analysis of graph search, reactive planning, and roadmap methods across discrete and geometric planning problems.",
+    "tags": ["A*", "Dijkstra", "Bug Algorithms", "Roadmaps"]
+  },
+  {
+    "title": "ROS 2 HTTP Gateway",
+    "year": "2025",
+    "category": "Robot Infrastructure",
+    "description": "A lightweight Python gateway and C++ processing-node architecture for network-triggered image workloads, message forwarding, and lifecycle-style coordination.",
+    "tags": ["ROS 2", "Python", "C++", "HTTP"]
+  },
+  {
+    "title": "Autonomous Vehicle Following System",
+    "year": "2024",
+    "category": "Autonomy",
+    "description": "A ROS 2 prototype combining perception, motion decisions, OAK-D sensing, LiDAR-triggered emergency braking, and real-time control.",
+    "tags": ["ROS 2", "OAK-D", "LiDAR", "Object Detection"]
+  }
+]

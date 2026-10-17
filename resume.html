@@ -1,79 +1,149 @@
-<main class="cv">
-<script type="module" src="global.js"></script>
-<link rel="stylesheet" href="global.css">
+<!doctype html>
+<html lang="en">
 <head>
-  <base href="/portfolio/">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume for Ruochen Li, robotics engineer working across ROS 2, controls, motion planning, and embedded systems.">
+  <title>Resume — Ruochen Li</title>
+  <link rel="stylesheet" href="global.css">
 </head>
-  <h1>Ruocheng Li</h1>
-  <p><strong>Email:</strong> rul039@ucsd.edu</p>
-  <p><strong>Phone:</strong> +1 858-241-5728</p>
-  <p>Detail-oriented Mechanical Engineering student at UCSD focused on control and robotics. Experienced in automation systems, DIY electronics, and hardware integration.</p>
-  <section>
-    <h2>Education</h2>
-    <p><strong>B.S. Mechanical Engineering (Control & Robotics)</strong>, UC San Diego</p>
-    <ul>
-      <li>Minor: Data Science</li>
-      <li>GPA: 3.75 | Dean’s Honors</li>
-      <li>Courses: Controls, Thermo/Fluids, CAD, FEA, Monte Carlo Analysis, Data Structures</li>
-    </ul>
-  </section>
+<body>
+  <main class="cv">
+    <header class="cv-header">
+      <div>
+        <p class="eyebrow">Robotics resume</p>
+        <h1>Ruochen Li</h1>
+        <p class="summary">Mechanical Engineering graduate from UC San Diego with a B.S. in Controls and Robotics, continuing at UC San Diego for an M.S. focused on Controls and Mechatronics starting September 2026. Experienced in ROS 2 system integration, feedback control, motion planning, multi-sensor fusion, and embedded systems.</p>
+      </div>
+      <div class="cv-contact">
+        <a href="mailto:liruochenjordan@outlook.com">liruochenjordan@outlook.com</a>
+        <a href="tel:+18582415728">+1 858-241-5728</a>
+        <a href="https://github.com/Arcilios" target="_blank" rel="noreferrer">github.com/Arcilios</a>
+        <a href="https://linkedin.com/in/ruochen-li" target="_blank" rel="noreferrer">linkedin.com/in/ruochen-li</a>
+      </div>
+    </header>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python, Matlab, Java, C++, Arduino</li>
-      <li><strong>Frameworks:</strong> ROS2, OpenCV, PyTorch</li>
-      <li><strong>CAD:</strong> SolidWorks, Fusion 360, AutoCAD</li>
-      <li><strong>Manufacturing:</strong> 3D Printing, CNC</li>
-      <li><strong>Data:</strong> Visualization, Monte Carlo, FEA</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Experience</h2>
+      <div class="cv-content">
+        <article class="cv-entry">
+          <div class="entry-heading">
+            <h3>Embedded Engineer · Triton Droids</h3>
+            <time>Sep 2025 — Present</time>
+          </div>
+          <ul>
+            <li>Contributed to the Humanoid ROS 2 SDK architecture, routing sensor data, joint states, and motor CAN I/O through a ROS 2 topic bus.</li>
+            <li>Developed and validated motor-control interfaces around <code>/joint_states</code> and <code>/motor_commands</code> for feedback and command flow.</li>
+            <li>Configured MoveIt 2 robot models, joint limits, and controller interfaces for humanoid motion planning and simulation validation.</li>
+            <li>Designed feedback control algorithms to improve stability, tracking performance, and disturbance rejection.</li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="entry-heading">
+            <h3>Robotics Engineering Intern · Guyi Technology Culture Co., Ltd.</h3>
+            <time>Jun 2025 — Aug 2025</time>
+          </div>
+          <ul>
+            <li>Built ROS 2 robot-control pipelines spanning URDF modeling, joint-state publishing, kinematic configuration, and MoveIt 2 integration.</li>
+            <li>Developed ESP32 communication modules with HTTP and WebSocket interfaces for monitoring and remote debugging.</li>
+            <li>Supported hardware/software bring-up across simulation, control backends, and embedded interfaces.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <article>
-      <h3>Autogyro Flight Controller (Jan 2025 – ongoing)</h3>
-      <ul>
-        <li>Designed full aircraft structure for sensor + control modules</li>
-        <li>Integrated ROS2 for sensor fusion and real-time path control</li>
-        <li>Used DJI FPV system and custom gimbal for stabilized live video</li>
-      </ul>
-    </article>
-    <article>
-      <h3>U.S. Power Outage Data Analysis (Feb–Mar 2025)</h3>
-      <ul>
-        <li>Cleaned and engineered features for outage duration regression</li>
-        <li>Visualized trends and linked results to infrastructure + climate</li>
-      </ul>
-    </article>
-    <article>
-      <h3>Autonomous Vehicle with Lane-Keeping & Obstacle Avoidance (Fall 2024)</h3>
-      <ul>
-        <li>Used PyTorch for vehicle detection and ROS2 for system control</li>
-        <li>Combined OpenCV/OAK-D for deviation correction and LIDAR for braking</li>
-      </ul>
-    </article>
-    <article>
-      <h3>GPS-Based Lane-Keeping Vehicle (Sep–Oct 2024)</h3>
-      <ul>
-        <li>Integrated GPS + ML model for real-time lane detection via ROS2</li>
-        <li>Optimized antenna mount with custom CAD design</li>
-      </ul>
-    </article>
-    <article>
-      <h3>Arduino System Monitor (Jul–Aug 2024)</h3>
-      <ul>
-        <li>Displayed temperature, CPU, GPU data on OLED via Python serial</li>
-        <li>Integrated DS18B20 and implemented error handling</li>
-      </ul>
-    </article>
-    <article>
-      <h3>Image Processing + KNN Classifier (Feb–Mar 2024)</h3>
-      <ul>
-        <li>Implemented image negation, grayscale, edge detection, etc.</li>
-        <li>Classified images using custom KNN on pixel distance</li>
-      </ul>
-    </article>
-  </section>
-</main>
+    <section>
+      <h2>Education</h2>
+      <div class="cv-content">
+        <article class="cv-entry">
+          <div class="entry-heading">
+            <h3>M.S. Mechanical Engineering · Controls & Mechatronics</h3>
+            <time>Starting Sep 2026</time>
+          </div>
+          <p>University of California San Diego</p>
+        </article>
+        <article class="cv-entry">
+          <div class="entry-heading">
+            <h3>B.S. Mechanical Engineering · Controls & Robotics</h3>
+            <time>Sep 2022 — Jun 2026</time>
+          </div>
+          <p>University of California San Diego · GPA 3.8 · Dean’s Honors List, multiple quarters</p>
+          <p>Coursework: Linear Control Systems, Embedded Control, Motion Planning, State Estimation, Autonomous Driving, Machine Learning, CAD, FEA, and Feedback Systems Design.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected projects</h2>
+      <div class="cv-content">
+        <article class="cv-entry">
+          <div class="entry-heading"><h3>Humanoid Vision & Head Tracking</h3><time>2026 — Present</time></div>
+          <ul>
+            <li>Built a C++ ROS 2 vision package with OpenCV-DNN YOLO inference, optional TensorRT acceleration, detection post-processing, and reusable tracking components.</li>
+            <li>Estimated camera-frame 3D targets from aligned RealSense depth using valid-neighborhood median sampling and depth deprojection.</li>
+            <li>Converted image-center error and camera intrinsics into bounded head-servo commands with deadband, speed, acceleration, and stale-target safety limits.</li>
+            <li>Integrated the host tracker with ESP32 micro-ROS and PCA9685 servo control through a unified launch path.</li>
+          </ul>
+          <a class="inline-project-link" href="https://github.com/triton-droids/embedded/tree/Humanoid_ros2/humanoid_vision" target="_blank" rel="noreferrer">View Humanoid Vision on GitHub ↗</a>
+        </article>
+        <article class="cv-entry">
+          <div class="entry-heading"><h3>ROS 2 Robotic Sorting System</h3><time>Jan 2026 — Present</time></div>
+          <ul>
+            <li>Set up ROS 2 Humble in Docker on Ubuntu 24.04 and validated the MoveIt 2 Panda demo pipeline.</li>
+            <li>Designed modular <code>sorting_bringup</code>, <code>sorting_perception</code>, <code>sorting_planner</code>, and <code>sorting_data</code> packages.</li>
+            <li>Implemented a working graph connecting object classification to bin-placement decisions and prepared it for perception, grasp planning, and manipulation.</li>
+            <li>Applied configuration-space planning, collision checking, reachability constraints, and OMPL planners to pre-grasp and place trajectories.</li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="entry-heading"><h3>Robot Motion Planning & Path Search</h3><time>Feb 2026 — Present</time></div>
+          <ul>
+            <li>Implemented and compared BFS, DFS, Dijkstra, and A* for discrete planning tasks.</li>
+            <li>Studied Bug1, Bug2, Tangent Bug, trapezoidal decomposition, visibility graphs, and Voronoi roadmaps.</li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="entry-heading"><h3>ROS 2 HTTP Gateway & Image-Processing Coordination</h3><time>Jun 2025 — Jul 2025</time></div>
+          <ul>
+            <li>Designed a lightweight HTTP gateway to trigger and manage robot node activity through network interfaces.</li>
+            <li>Planned a Python gateway and C++ processing-node architecture with on-demand wake/sleep behavior and lifecycle-style coordination.</li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="entry-heading"><h3>Autonomous Rotorcraft Flight Control</h3><time>Jan 2025 — Jun 2025</time></div>
+          <ul>
+            <li>Integrated multi-sensor Pixhawk pipelines for attitude control, state monitoring, and trajectory tracking.</li>
+            <li>Applied PID control and path-planning logic, with onboard video streaming and target tracking.</li>
+          </ul>
+        </article>
+        <article class="cv-entry">
+          <div class="entry-heading"><h3>Autonomous Vehicle Following System</h3><time>Oct 2024 — Dec 2024</time></div>
+          <ul>
+            <li>Built ROS 2 perception, decision, and control modules for a vehicle-following prototype.</li>
+            <li>Combined OAK-D sensing, object detection, LiDAR-triggered braking, and real-time control logic.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Capabilities</h2>
+      <div class="skill-groups">
+        <div class="skill-group"><strong>Robotics software & controls</strong><p>ROS 2, MoveIt 2, motion planning, A*, Dijkstra, Bug algorithms, PID control, state estimation, multi-sensor fusion</p></div>
+        <div class="skill-group"><strong>Embedded & deployment</strong><p>ESP32, Arduino, MCU integration, Docker, Linux, Git, real-time acquisition, calibration, filtering</p></div>
+        <div class="skill-group"><strong>Programming & simulation</strong><p>Python, C++, MATLAB, URDF, RViz, Gazebo, Simulink, dynamic modeling</p></div>
+        <div class="skill-group"><strong>Mechanical design</strong><p>SolidWorks, Fusion 360, 3D printing, CNC machining, GD&amp;T</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Additional</h2>
+      <div class="cv-content">
+        <article class="cv-entry"><h3>Interests</h3><p>Robotics systems integration, embedded development, rapid prototyping, flight, and automation systems.</p></article>
+        <article class="cv-entry"><h3>Languages</h3><p>Chinese — Native · English — Fluent</p></article>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="global.js"></script>
+</body>
+</html>

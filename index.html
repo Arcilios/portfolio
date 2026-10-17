@@ -1,28 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruochen Li: Personal site and portfolio</title>
-  <link rel="stylesheet" href="global.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ruochen Li is a robotics engineer working across ROS 2, controls, motion planning, and embedded systems.">
+  <title>Ruochen Li — Robotics & Controls</title>
+  <link rel="stylesheet" href="global.css">
 </head>
 <body>
-  <h1>Ruochen Li</h1>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-  <img src="images/nice_img.png" alt="A nice image, pity if you can't see it" style="width:300px;height:auto;" />
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Robotics software · Controls · Embedded systems</p>
+        <h1 id="hero-title">I build systems that <span>move, sense,</span> and make decisions.</h1>
+        <p class="lede">I’m Ruochen Li, a UC San Diego mechanical engineering graduate focused on robotics and controls. I build ROS 2 systems that connect motion planning, feedback control, sensing, and embedded hardware.</p>
+        <div class="button-row">
+          <a class="button primary" href="projects/">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="mailto:liruochenjordan@outlook.com">Start a conversation</a>
+        </div>
+      </div>
 
-  <h2>Latest Projects</h2>
-  <section class="projects"></section>
-  <section class="github-section">
-    <h2>My GitHub Projects</h2>
-    <div class="github-container"></div>
-  </section>
-  
+      <div class="system-card" aria-label="A robotics workflow from modeling through planning to control">
+        <div class="system-card__top">
+          <span>Current focus</span>
+          <span class="status"><i></i> Building</span>
+        </div>
+        <div class="system-loop">
+          <div class="node"><span class="node-index">01</span><strong>Model</strong><small>URDF · RViz · Gazebo</small></div>
+          <span class="flow" aria-hidden="true">→</span>
+          <div class="node"><span class="node-index">02</span><strong>Plan</strong><small>MoveIt 2 · OMPL · Search</small></div>
+          <span class="flow" aria-hidden="true">→</span>
+          <div class="node"><span class="node-index">03</span><strong>Control</strong><small>PID · CAN · Embedded I/O</small></div>
+        </div>
+        <p class="system-note">My best work lives at the boundary between physical machines and intelligent software.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Selected projects</p><h2 id="work-title">Built to learn. Tested to work.</h2></div>
+        <a class="text-link" href="projects/">View all projects <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="projects featured-projects" aria-live="polite"></div>
+    </section>
+
+    <section class="section approach" aria-labelledby="approach-title">
+      <div class="section-heading compact"><div><p class="eyebrow">How I work</p><h2 id="approach-title">One system, three perspectives.</h2></div></div>
+      <div class="capability-grid">
+        <article><span class="capability-number">01</span><h3>Integrate</h3><p>Connect robot models, sensors, motor interfaces, and ROS 2 communication into one testable system.</p></article>
+        <article><span class="capability-number">02</span><h3>Plan & control</h3><p>Turn configuration-space reasoning, motion planning, and feedback control into reliable motion.</p></article>
+        <article><span class="capability-number">03</span><h3>Deploy</h3><p>Bring C++, Python, Docker, Linux, and embedded hardware together on real robotic platforms.</p></article>
+      </div>
+    </section>
+
+    <section class="contact-band" aria-labelledby="contact-title">
+      <p class="eyebrow">Let’s build something</p>
+      <h2 id="contact-title">Have a robotics problem worth solving?</h2>
+      <a href="mailto:liruochenjordan@outlook.com">liruochenjordan@outlook.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer><p>Designed and built by Ruochen Li.</p><p><span id="year"></span> · San Diego, California</p></footer>
   <script type="module" src="index.js"></script>
-  <section class="cat-section">
-    <h2>Random Cat from API</h2>
-    <div class="cat-container"></div>
-  </section>
-  
 </body>
 </html>
